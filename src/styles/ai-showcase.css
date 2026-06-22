@@ -1,0 +1,86 @@
+/* ============================================
+   AI Showcase Section
+   ============================================ */
+.ai-showcase {
+  padding: 160px 0;
+  background: var(--color-black-soft);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.ai-showcase-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.ai-showcase-title {
+  font-family: var(--font-heading);
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: var(--color-white-pure);
+  margin-bottom: 16px;
+}
+
+.ai-showcase-subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--color-gray-500);
+}
+
+/* --- Grid --- */
+.ai-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px;
+}
+
+/* --- Card --- */
+.ai-showcase-card {
+  cursor: pointer;
+  transition: transform var(--transition-base);
+}
+
+.ai-showcase-card:hover {
+  transform: translateY(-4px);
+}
+
+.ai-showcase-video-wrapper {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--color-gray-100);
+}
+
+.ai-showcase-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ai-showcase-label {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  font-family: var(--font-heading);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+  background: rgba(10, 10, 10, 0.5);
+  padding: 6px 14px;
+  pointer-events: none;
+  transition: opacity var(--transition-fast);
+}
+
+.ai-showcase-card:hover .ai-showcase-label {
+  opacity: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ai-showcase-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}

@@ -1,0 +1,67 @@
+/* ============================================
+   TrueFocus — word-by-word focus animation
+   ============================================ */
+.focus-container {
+  position: relative;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.3em;
+}
+
+.focus-word {
+  display: inline-block;
+  transition: filter 0.5s ease, color 0.5s ease;
+  cursor: default;
+}
+
+.focus-word.manual {
+  cursor: pointer;
+}
+
+.focus-word.active {
+  color: var(--color-white-pure);
+}
+
+/* --- Animated focus frame --- */
+.focus-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1.5px solid var(--color-white);
+  border-radius: 2px;
+  pointer-events: none;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.12);
+}
+
+/* --- Corner accents --- */
+.focus-corner {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-color: var(--color-white);
+  border-style: solid;
+}
+
+.focus-corner--tl {
+  top: -3px;
+  left: -3px;
+  border-width: 2px 0 0 2px;
+}
+
+.focus-corner--tr {
+  top: -3px;
+  right: -3px;
+  border-width: 2px 2px 0 0;
+}
+
+.focus-corner--bl {
+  bottom: -3px;
+  left: -3px;
+  border-width: 0 0 2px 2px;
+}
+
+.focus-corner--br {
+  bottom: -3px;
+  right: -3px;
+  border-width: 0 2px 2px 0;
+}
