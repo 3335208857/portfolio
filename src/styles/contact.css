@@ -168,3 +168,37 @@
 .contact-backtop:hover {
   color: var(--color-white);
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact {
+    min-height: 100svh;
+    height: auto;
+    padding: 120px 0 80px;
+  }
+
+  .contact-title {
+    font-size: clamp(32px, 8vw, 48px);
+  }
+
+  .contact-text {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  .contact-email {
+    font-size: 22px;
+  }
+
+  .contact-socials {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .contact-footer {
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px 20px;
+    text-align: center;
+  }
+}

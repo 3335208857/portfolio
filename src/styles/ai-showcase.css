@@ -79,8 +79,34 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .ai-showcase {
+    padding: 100px 0;
+  }
+
+  .ai-showcase-header {
+    margin-bottom: 48px;
+  }
+
+  .ai-showcase-title {
+    font-size: 36px;
+  }
+
+  .ai-showcase-subtitle {
+    font-size: 14px;
+  }
+
   .ai-showcase-grid {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ai-showcase {
+    padding: 80px 0;
+  }
+
+  .ai-showcase-title {
+    font-size: 28px;
   }
 }

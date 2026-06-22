@@ -148,3 +148,24 @@ button {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-gray-400);
 }
+
+/* ============================================
+   Responsive — Global
+   ============================================ */
+@media (max-width: 900px) {
+  :root {
+    --container-padding: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --container-padding: 16px;
+  }
+
+  .section-label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-bottom: 16px;
+  }
+}

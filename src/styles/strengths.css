@@ -108,7 +108,60 @@
 
 /* Responsive */
 @media (max-width: 900px) {
+  .strengths {
+    padding: 100px 0;
+  }
+
+  .strengths-header {
+    margin-bottom: 60px;
+  }
+
+  .strengths-title {
+    font-size: 36px;
+  }
+
+  .strengths-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .strength-card {
+    padding: 40px 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .strengths {
+    padding: 80px 0;
+  }
+
+  .strengths-title {
+    font-size: 28px;
+  }
+
+  .strengths-subtitle {
+    font-size: 14px;
+  }
+
   .strengths-grid {
     grid-template-columns: 1fr;
+  }
+
+  .strength-card {
+    padding: 32px 24px;
+  }
+
+  .strength-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .strength-name {
+    font-size: 17px;
+  }
+
+  .strength-desc {
+    font-size: 13px;
   }
 }

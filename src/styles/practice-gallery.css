@@ -33,3 +33,35 @@
   height: 550px;
   position: relative;
 }
+
+@media (max-width: 768px) {
+  .practice {
+    padding: 100px 0 60px;
+  }
+
+  .practice-title {
+    font-size: 36px;
+  }
+
+  .practice-subtitle {
+    font-size: 14px;
+  }
+
+  .practice-gallery-wrapper {
+    height: 380px;
+  }
+}
+
+@media (max-width: 600px) {
+  .practice {
+    padding: 80px 0 48px;
+  }
+
+  .practice-title {
+    font-size: 28px;
+  }
+
+  .practice-gallery-wrapper {
+    height: 300px;
+  }
+}

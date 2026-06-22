@@ -143,17 +143,58 @@
 
 /* Responsive */
 @media (max-width: 1024px) {
+  .about {
+    padding: 100px 0;
+  }
+
   .about-grid {
     grid-template-columns: 1fr;
-    gap: 64px;
+    gap: 48px;
   }
 
   .about-portrait-wrapper {
-    max-width: 360px;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .about-name {
+    font-size: 32px;
+  }
+
+  .about-role {
+    font-size: 13px;
+    letter-spacing: 3px;
+  }
+
+  .about-bio {
+    font-size: 14px;
+    margin-bottom: 32px;
   }
 
   .about-stats {
     grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
+    gap: 24px;
+  }
+
+  .about-stat-number {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about {
+    padding: 80px 0;
+  }
+
+  .about-stats {
+    gap: 20px;
+  }
+
+  .about-stat-number {
+    font-size: 28px;
+  }
+
+  .about-stat-label {
+    font-size: 11px;
   }
 }
