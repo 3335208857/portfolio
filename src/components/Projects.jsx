@@ -23,7 +23,7 @@ const PROJECTS = [
     name: '独立带货账号 · 全链路运营',
     tags: ['短视频', '直播运营', '广告投放', '美妆类目'],
     desc: '从0到1搭建抖音/快手带货账号，独立负责选品、直播策划、短视频引流、广告投放全链路。单场最高GMV 5万元，月均GMV 30万元，投放ROI稳定在1:3以上。单链接销量突破18,000+。',
-    image: '/images/livestream-data.jpg',
+    image: '/images/livestream-data.webp',
     metrics: ['月均GMV 30W', '单场GMV 5W', 'ROI 1:3+', '单链接1.8W+'],
   },
   {
@@ -31,7 +31,7 @@ const PROJECTS = [
     name: '短视频爆款 · 独立制作人',
     tags: ['内容创作', '爆款脚本', '拍摄剪辑', 'TikTok'],
     desc: '独立完成选题→脚本→实拍→剪辑全流程，累计产出短视频60条，总播放量突破2000万。单条视频播放量突破200万，善用前3秒抓力与音乐卡点设计提升完播率。内容方法论可跨平台迁移。',
-    image: '/images/short-video-data.jpg',
+    image: '/images/short-video-data.webp',
     metrics: ['60条视频', '2000W播放', '单条200W+', '自然流量65%+'],
   },
 ]
@@ -70,6 +70,8 @@ export default function Projects() {
                   muted
                   loop
                   playsInline
+                  preload="none"
+                  disableRemotePlayback
                 />
               ) : project.image ? (
                 <img

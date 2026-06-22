@@ -16,6 +16,8 @@ export default function Hero() {
           muted
           loop
           playsInline
+          preload="auto"
+          disableRemotePlayback
         />
         <div className="hero-bg-overlay" />
         <div className="hero-particles">

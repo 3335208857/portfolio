@@ -3,15 +3,15 @@ import SplitText from './SplitText'
 import CircularGallery from './CircularGallery'
 
 const PRACTICE_IMAGES = [
-  { image: '/images/practice/1.公园长椅上的紫色黄昏.png', text: '公园长椅上的紫色黄昏' },
-  { image: '/images/practice/1.重塑文艺复兴.png', text: '重塑文艺复兴' },
-  { image: '/images/practice/4.涩谷路口十指相扣.png', text: '涩谷路口十指相扣' },
-  { image: '/images/practice/5.云之建筑.png', text: '云之建筑' },
-  { image: '/images/practice/eee74e71d19611847bc463da93b0d2a6.png', text: '练习 05' },
-  { image: '/images/practice/gpt-image-2_0aa2579f-3179-4856-bd56-d1f5b73e6162_0 (1).png', text: '练习 06' },
-  { image: '/images/practice/gpt-image-2_a66a36fe-9350-44db-a5ec-3a1f8989f3bd_0.png', text: '练习 07' },
-  { image: '/images/practice/gpt-image-2_b26c726f-c2db-4e50-85ad-b1bab58c2bfc_0.png', text: '练习 08' },
-  { image: '/images/practice/海螺_图片_Y2K style _522772989941850122.png', text: '海螺 Y2K' },
+  { image: '/images/practice/1.公园长椅上的紫色黄昏.webp', text: '公园长椅上的紫色黄昏' },
+  { image: '/images/practice/1.重塑文艺复兴.webp', text: '重塑文艺复兴' },
+  { image: '/images/practice/4.涩谷路口十指相扣.webp', text: '涩谷路口十指相扣' },
+  { image: '/images/practice/5.云之建筑.webp', text: '云之建筑' },
+  { image: '/images/practice/eee74e71d19611847bc463da93b0d2a6.webp', text: '练习 05' },
+  { image: '/images/practice/gpt-image-2_0aa2579f-3179-4856-bd56-d1f5b73e6162_0 (1).webp', text: '练习 06' },
+  { image: '/images/practice/gpt-image-2_a66a36fe-9350-44db-a5ec-3a1f8989f3bd_0.webp', text: '练习 07' },
+  { image: '/images/practice/gpt-image-2_b26c726f-c2db-4e50-85ad-b1bab58c2bfc_0.webp', text: '练习 08' },
+  { image: '/images/practice/海螺_图片_Y2K style _522772989941850122.webp', text: '海螺 Y2K' },
 ]
 
 export default function PracticeGallery() {

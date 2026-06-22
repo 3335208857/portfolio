@@ -39,6 +39,8 @@ export default function AIShowcase() {
                   muted
                   loop
                   playsInline
+                  preload="none"
+                  disableRemotePlayback
                 />
                 <span className="ai-showcase-label">{v.label}</span>
               </div>

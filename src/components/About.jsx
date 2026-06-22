@@ -24,7 +24,7 @@ export default function About() {
           <div className="about-portrait-wrapper">
             <div className="about-portrait">
               <img
-                src="/images/portrait-new.png"
+                src="/images/portrait.webp"
                 alt="王敬博"
                 className="about-portrait-img"
               />
