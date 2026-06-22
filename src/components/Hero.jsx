@@ -68,7 +68,7 @@ export default function Hero() {
               weight
               textColor="transparent"
               strokeColor="rgba(255,255,255,0.7)"
-              minFontSize={48}
+              minFontSize={28}
               flex
             />
           </div>
