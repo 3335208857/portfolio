@@ -1,5 +1,6 @@
 import '../styles/projects.css'
 import SplitText from './SplitText'
+import LazyVideo from './LazyVideo'
 
 const PROJECTS = [
   {
@@ -9,6 +10,11 @@ const PROJECTS = [
     desc: '自主完成产品静物与场景拍摄，搭建美妆类目布光方案，素材视觉风格统一、质感突出。结合 CLO3D 进行产品3D呈现，素材点击率提升40%+。',
     video: '/images/hero-bg.mp4',
     metrics: ['点击率+40%', 'CLO3D', '场景布光', '视觉统一'],
+    detailImages: [
+      '/images/product-detail-1.webp',
+      '/images/product-detail-2.webp',
+      '/images/product-detail-3.webp',
+    ],
   },
   {
     id: '02',
@@ -63,15 +69,10 @@ export default function Projects() {
             <span className="project-number">{project.id}</span>
             <div className="project-image-wrapper">
               {project.video ? (
-                <video
+                <LazyVideo
                   className="project-video"
                   src={project.video}
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  preload="none"
-                  disableRemotePlayback
+                  preload="metadata"
                 />
               ) : project.image ? (
                 <img
@@ -100,6 +101,16 @@ export default function Projects() {
                   <span key={m} className="project-metric">{m}</span>
                 ))}
               </div>
+
+              {project.detailImages && (
+                <div className="project-detail-gallery">
+                  {project.detailImages.map((src, i) => (
+                    <div key={src} className="project-detail-item">
+                      <img src={src} alt={`详情 ${i + 1}`} className="project-detail-img" />
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         ))}
