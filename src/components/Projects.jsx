@@ -76,6 +76,7 @@ export default function Projects() {
                   loop
                   playsInline
                   preload="auto"
+                  onPause={e => e.target.play().catch(() => {})}
                 />
               ) : project.image ? (
                 <img

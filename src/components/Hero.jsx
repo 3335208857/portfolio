@@ -17,6 +17,7 @@ export default function Hero() {
           loop
           playsInline
           preload="auto"
+          onPause={e => e.target.play().catch(() => {})}
         />
         <div className="hero-bg-overlay" />
         <div className="hero-particles">

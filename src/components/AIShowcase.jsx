@@ -40,6 +40,7 @@ export default function AIShowcase() {
                   loop
                   playsInline
                   preload="auto"
+                  onPause={e => e.target.play().catch(() => {})}
                 />
                 <span className="ai-showcase-label">{v.label}</span>
               </div>
