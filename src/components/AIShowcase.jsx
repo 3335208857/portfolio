@@ -1,6 +1,5 @@
 import '../styles/ai-showcase.css'
 import SplitText from './SplitText'
-import LazyVideo from './LazyVideo'
 
 const AI_VIDEOS = [
   { src: '/images/ai-showcase-1.mp4', label: 'AI 动态 01' },
@@ -33,10 +32,14 @@ export default function AIShowcase() {
           {AI_VIDEOS.map(v => (
             <div key={v.src} className="ai-showcase-card">
               <div className="ai-showcase-video-wrapper">
-                <LazyVideo
+                <video
                   className="ai-showcase-video"
                   src={v.src}
-                  preload="metadata"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="auto"
                 />
                 <span className="ai-showcase-label">{v.label}</span>
               </div>

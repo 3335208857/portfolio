@@ -1,5 +1,4 @@
 import '../styles/hero.css'
-import LazyVideo from './LazyVideo'
 import TextPressure from './TextPressure'
 import SplitText from './SplitText'
 import GradualBlur from './GradualBlur'
@@ -10,11 +9,14 @@ export default function Hero() {
   return (
     <section id="hero" className="hero section">
       <div className="hero-bg">
-        <LazyVideo
+        <video
           className="hero-bg-video"
           src="/images/hero-bg-video.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
           preload="auto"
-          rootMargin="0px"
         />
         <div className="hero-bg-overlay" />
         <div className="hero-particles">

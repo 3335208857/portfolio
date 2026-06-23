@@ -1,6 +1,5 @@
 import '../styles/projects.css'
 import SplitText from './SplitText'
-import LazyVideo from './LazyVideo'
 
 const PROJECTS = [
   {
@@ -69,10 +68,14 @@ export default function Projects() {
             <span className="project-number">{project.id}</span>
             <div className="project-image-wrapper">
               {project.video ? (
-                <LazyVideo
+                <video
                   className="project-video"
                   src={project.video}
-                  preload="metadata"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="auto"
                 />
               ) : project.image ? (
                 <img
